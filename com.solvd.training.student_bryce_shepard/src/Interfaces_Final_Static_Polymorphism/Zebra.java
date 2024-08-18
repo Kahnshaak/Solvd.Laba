@@ -1,7 +1,5 @@
 package Interfaces_Final_Static_Polymorphism;
 
-import java.util.Arrays;
-
 public class Zebra extends Animal implements ILand, IHerbivore{
     public Zebra(){
         super(

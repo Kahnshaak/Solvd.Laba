@@ -1,7 +1,5 @@
 package Interfaces_Final_Static_Polymorphism;
 
-import java.util.Arrays;
-
 final public class BlueWhale extends Whale implements ICarnivore, IHerbivore{
     public BlueWhale(){
         super(

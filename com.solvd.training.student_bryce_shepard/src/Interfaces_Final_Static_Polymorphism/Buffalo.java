@@ -1,8 +1,5 @@
 package Interfaces_Final_Static_Polymorphism;
 
-
-import java.util.Arrays;
-
 public class Buffalo extends Animal implements IHerbivore, ILand {
     public Buffalo(){
         super(

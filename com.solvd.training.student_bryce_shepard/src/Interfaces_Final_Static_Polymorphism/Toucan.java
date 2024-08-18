@@ -1,6 +1,5 @@
 package Interfaces_Final_Static_Polymorphism;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class Toucan extends Animal implements IFlyer, IHerbivore, ICarnivore {
