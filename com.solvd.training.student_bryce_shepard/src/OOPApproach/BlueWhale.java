@@ -1,13 +1,15 @@
-package ZooAnimals;
+package OOPApproach;
 
 import java.util.Objects;
 
-public class Camel extends Animal{
-    public Camel(){
-        this.name = "Camel";
+public class BlueWhale extends Animal{
+    public BlueWhale(){
+        this.name = "Blue Whale";
+        this.hab = Habitat.ocean;
+        this.fur = false;
         this.claws = false;
-        this.eats = Food.herbivore;
-        this.hab = Habitat.desert;
+        this.eats = Food.omnivore;
+        this.legs = 0;
     }
 
     @Override

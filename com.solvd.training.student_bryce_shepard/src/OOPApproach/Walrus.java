@@ -1,14 +1,15 @@
-package ZooAnimals;
+package OOPApproach;
 
 import java.util.Objects;
 
-public class BlueWhale extends Animal{
-    public BlueWhale(){
-        this.name = "Blue Whale";
-        this.hab = Habitat.ocean;
-        this.fur = false;
+public class Walrus extends Animal{
+    public Walrus(){
+        this.name = "Walrus";
         this.claws = false;
-        this.eats = Food.omnivore;
+        this.eats = Food.carnivore;
+        this.fur = false;
+        this.hab = Habitat.tundra;
+        this.hibernates = true;
         this.legs = 0;
     }
 

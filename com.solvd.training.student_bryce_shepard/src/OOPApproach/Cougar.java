@@ -1,13 +1,13 @@
-package ZooAnimals;
+package OOPApproach;
 
 import java.util.Objects;
 
-public class Bear extends Animal{
-    public Bear(){
-        this.name = "Bear";
+public class Cougar extends Animal{
+    public Cougar(){
+        this.name = "Cougar";
         this.hibernates = true;
-        this.eats = Food.omnivore;
-        this.hab = Habitat.forest;
+        this.eats = Food.carnivore;
+        this.hab = Habitat.mountain;
     }
 
     @Override

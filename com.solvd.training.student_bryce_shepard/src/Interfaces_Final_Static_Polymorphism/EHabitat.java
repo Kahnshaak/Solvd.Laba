@@ -1,6 +1,6 @@
-package ZooAnimals;
+package Interfaces_Final_Static_Polymorphism;
 
-public enum Habitat {
+public enum EHabitat {
     tundra,
     desert,
     rainForest,

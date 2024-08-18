@@ -1,22 +1,20 @@
-package ZooAnimals;
+package OOPApproach;
 
 import java.util.Objects;
 
-public class Orca extends Animal{
-    public Orca(){
-        this.name = "Orca Whale";
-        this.eats = Food.carnivore;
-        this.hab = Habitat.ocean;
-        this.claws = false;
-        this.legs = 0;
+public class Toucan extends Animal{
+    public Toucan(){
+        this.name = "Toucan";
+        this.legs = 2;
         this.fur = false;
+        this.claws = false;
+        this.hab = Habitat.rainForest;
     }
 
     @Override
     public String toString(){
         return String.format("This is a %s, it is a %s, and lives in the %s. It has %d legs.", this.name, this.eats, this.hab, this.legs);
     }
-
 
     @Override
     public boolean equals(Object obj) {

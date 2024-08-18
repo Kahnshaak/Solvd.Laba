@@ -1,4 +1,4 @@
-package ZooAnimals;
+package OOPApproach;
 
 public abstract class Animal {
     protected String name;

@@ -1,4 +1,4 @@
-package ZooAnimals;
+package OOPApproach;
 
 public enum Food {
     carnivore,
