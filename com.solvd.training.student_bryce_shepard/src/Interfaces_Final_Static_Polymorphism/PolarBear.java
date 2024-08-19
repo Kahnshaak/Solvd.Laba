@@ -4,12 +4,12 @@ package Interfaces_Final_Static_Polymorphism;
 final public class PolarBear extends Bear implements ICarnivore, ISwimmer, ILand{
     public PolarBear() {
         super(
+                "Polar Bear",
+                EFoodSource.carnivore,
+                EHabitat.tundra,
                 new EMeat[] {EMeat.seal, EMeat.fish },
                 new EPlants[] {}
         );
-        this.name = "Polar Bear";
-        this.hab = EHabitat.tundra;
-        this.foodSource = EFoodSource.carnivore;
     }
 
     @Override

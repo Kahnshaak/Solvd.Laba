@@ -2,15 +2,17 @@ package Interfaces_Final_Static_Polymorphism;
 
 // Polymorphism
 public abstract class Whale extends Animal implements ISwimmer {
-    public Whale(EMeat[] meats, EPlants[] plants){
+    public Whale(String name, EFoodSource fs, EMeat[] meats, EPlants[] plants){
         super(
+                name,
                 0,
                 false,
                 false,
+                fs,
+                EHabitat.ocean,
                 meats,
                 plants
         );
-        this.hab = EHabitat.ocean;
         // child classes establish food type
     }
 

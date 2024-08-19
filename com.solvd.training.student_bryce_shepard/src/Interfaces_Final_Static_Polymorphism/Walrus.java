@@ -5,15 +5,15 @@ import java.util.Random;
 public class Walrus extends Animal implements ISwimmer, ICarnivore{
     public Walrus(){
         super(
+                "Walrus",
                 0,
                 false,
                 false,
+                EFoodSource.carnivore,
+                EHabitat.ocean,
                 new EMeat[]{ EMeat.fish, EMeat.squid, EMeat.shrimp, EMeat.crab },
                 new EPlants[]{}
         );
-        this.name = "Walrus";
-        this.foodSource = EFoodSource.carnivore;
-        this.hab = EHabitat.tundra;
     }
 
     @Override

@@ -3,15 +3,15 @@ package Interfaces_Final_Static_Polymorphism;
 public class Camel extends Animal implements ILand, IHerbivore{
     public Camel(){
         super(
+                "Camel",
                 4,
                 true,
                 false,
+                EFoodSource.herbivore,
+                EHabitat.desert,
                 new EMeat[]{},
                 new EPlants[]{ EPlants.grass }
         );
-        this.name = "Camel";
-        this.foodSource = EFoodSource.herbivore;
-        this.hab = EHabitat.desert;
     }
 
     @Override

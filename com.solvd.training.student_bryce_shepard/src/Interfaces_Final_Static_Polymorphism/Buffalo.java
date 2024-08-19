@@ -3,15 +3,15 @@ package Interfaces_Final_Static_Polymorphism;
 public class Buffalo extends Animal implements IHerbivore, ILand {
     public Buffalo(){
         super(
+                "Buffalo",
                 4,
                 true,
                 false,
+                EFoodSource.herbivore,
+                EHabitat.plains,
                 new EMeat[]{},
                 new EPlants[]{ EPlants.grass }
         );
-        this.name = "Buffalo";
-        this.hab = EHabitat.plains;
-        this.foodSource = EFoodSource.herbivore;
     }
 
     @Override

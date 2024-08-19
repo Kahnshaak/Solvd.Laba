@@ -5,23 +5,26 @@ import java.util.Random;
 public class Bear extends Animal implements IHibernator, ICarnivore, IHerbivore, ILand {
     public Bear(){
         super(
+                "Bear",
                 4,
                 true,
                 true,
+                EFoodSource.omnivore,
+                EHabitat.forest,
                 new EMeat[]{EMeat.fish, EMeat.deer, EMeat.carrion, EMeat.insects},
                 new EPlants[]{EPlants.berries, EPlants.leaves}
         );
-        this.name = "Bear";
         this.hibernating = false;
-        this.foodSource = EFoodSource.omnivore;
-        this.hab = EHabitat.forest;
     }
 
-    public Bear(EMeat[] meats, EPlants[] plants) {
+    public Bear(String name, EFoodSource fs, EHabitat hab, EMeat[] meats, EPlants[] plants) {
         super(
+                name,
                 4,
                 true,
                 true,
+                fs,
+                hab,
                 meats,
                 plants
         );
@@ -41,7 +44,7 @@ public class Bear extends Animal implements IHibernator, ICarnivore, IHerbivore,
         System.out.printf("The %s starts to eat some %s%n", this.name, menu.toString());
     }
 
-
+    @Override
     public void eat(){
         Random rand = new Random();
         int selector = rand.nextInt(2);

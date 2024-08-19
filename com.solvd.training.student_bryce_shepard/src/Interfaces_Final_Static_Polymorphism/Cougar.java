@@ -5,15 +5,15 @@ import java.util.Random;
 public class Cougar extends Animal implements ICarnivore, ILand{
     public Cougar(){
         super(
+                "Cougar",
                 4,
                 true,
                 true,
+                EFoodSource.carnivore,
+                EHabitat.mountain,
                 new EMeat[]{ EMeat.carrion, EMeat.deer },
                 new EPlants[]{}
         );
-        this.name = "Cougar";
-        this.foodSource = EFoodSource.carnivore;
-        this.hab = EHabitat.mountain;
     }
 
     @Override

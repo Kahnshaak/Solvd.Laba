@@ -5,9 +5,10 @@ I can group together attributes and methods such as the ability to swim, or the 
 food eaten when those would not normally be a part of an inheritance hierarchy.
 
 # 2
-Static means that a reference is created and placed in the heap when the program starts up
-The anything can reference that static variable/method, as long as it has proper access, even
-if no objects of that class have been instantiated.
+Static means that a reference is created and placed in the heap when the program starts up.
+Then anything can reference that static variable/method, as long as it has proper access, even
+if no objects of that class have been instantiated since anything static belongs to the class and
+not an individual object.
 
 # 3
 You cannot call non-static methods from static since there is a possibility it had not been

@@ -1,6 +1,6 @@
 package OOPApproach;
 
-public class Program {
+public class OOPApproach {
     public static void main(String[] args){
         int count = 0;
         Animal[] animals = new Animal[10];

@@ -6,11 +6,11 @@ import java.util.Random;
 final public class Orca extends Whale implements ICarnivore{
     public Orca(){
         super(
+                "Orca Whale",
+                EFoodSource.carnivore,
                 new EMeat[]{ EMeat.seal, EMeat.fish, EMeat.squid},
                 new EPlants[]{}
         );
-        this.name = "Orca Whale";
-        this.foodSource = EFoodSource.carnivore;
     }
 
     @Override

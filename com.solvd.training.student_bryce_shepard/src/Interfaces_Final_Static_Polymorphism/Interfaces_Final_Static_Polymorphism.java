@@ -1,9 +1,7 @@
 package Interfaces_Final_Static_Polymorphism;
 
-public class Program {
+public class Interfaces_Final_Static_Polymorphism {
     public static void main(String[] args){
-        Zoo.ZooInfo();
-
         int count = 0;
         Animal[] animals = new Animal[10];
         animals[count] = new Bear();
@@ -41,9 +39,31 @@ public class Program {
             } if (animal instanceof IHibernator){
                 ((IHibernator) animal).storeFood(true);
                 ((IHibernator) animal).hibernate();
+                ((IHibernator) animal).isHibernating();
                 ((IHibernator) animal).wakeUp();
             }
             animal.eat();
         }
+    }
+    static {
+        String name = "Zonko's Zany Zoo";
+        String[] animals = new String[]{
+                "Bears",
+                "Blue Whales",
+                "Buffalo",
+                "Camels",
+                "Cougars",
+                "Orca Whales",
+                "Polar Bears",
+                "Toucan",
+                "Walrus",
+                "Zebra"
+        };
+
+        System.out.printf("Welcome to %s! We have all sorts of animals! Like:%n", name);
+        for (String animal : animals) {
+            System.out.println(animal);
+        }
+        System.out.printf("Enjoy your time here at %s!%n", name);
     }
 }

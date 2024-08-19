@@ -3,15 +3,15 @@ package Interfaces_Final_Static_Polymorphism;
 public class Zebra extends Animal implements ILand, IHerbivore{
     public Zebra(){
         super(
+                "Zebra",
                 4,
                 false,
                 false,
+                EFoodSource.herbivore,
+                EHabitat.savannah,
                 new EMeat[]{},
                 new EPlants[]{ EPlants.grass }
         );
-        this.name = "Zebra";
-        this.foodSource = EFoodSource.herbivore;
-        this.hab = EHabitat.savannah;
     }
 
     @Override

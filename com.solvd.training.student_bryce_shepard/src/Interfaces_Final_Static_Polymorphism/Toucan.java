@@ -5,15 +5,15 @@ import java.util.Random;
 public class Toucan extends Animal implements IFlyer, IHerbivore, ICarnivore {
     public Toucan(){
         super(
+                "Toucan",
                 2,
                 false,
                 true,
+                EFoodSource.omnivore,
+                EHabitat.rainForest,
                 new EMeat[]{ EMeat.insects },
                 new EPlants[]{ EPlants.fruit }
         );
-        this.name = "Toucan";
-        this.hab = EHabitat.rainForest;
-        this.foodSource = EFoodSource.omnivore;
     }
 
     @Override

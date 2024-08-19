@@ -3,11 +3,11 @@ package Interfaces_Final_Static_Polymorphism;
 final public class BlueWhale extends Whale implements ICarnivore, IHerbivore{
     public BlueWhale(){
         super(
+                "Blue Whale",
+            EFoodSource.omnivore,
             new EMeat[] { EMeat.zooplankton },
             new EPlants[] { EPlants.phytoplankton }
         );
-        this.name = "Blue Whale";
-        this.foodSource = EFoodSource.omnivore;
     }
 
     @Override
