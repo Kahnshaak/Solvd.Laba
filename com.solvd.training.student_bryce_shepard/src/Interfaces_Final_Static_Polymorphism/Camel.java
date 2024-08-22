@@ -7,10 +7,10 @@ public class Camel extends Animal implements ILand, IHerbivore{
                 4,
                 true,
                 false,
-                EFoodSource.herbivore,
-                EHabitat.desert,
+                EFoodSource.HERBIVORE,
+                EHabitat.DESERT,
                 new EMeat[]{},
-                new EPlants[]{ EPlants.grass }
+                new EPlants[]{ EPlants.GRASS}
         );
     }
 

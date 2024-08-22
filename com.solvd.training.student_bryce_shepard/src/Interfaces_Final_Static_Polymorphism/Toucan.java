@@ -9,10 +9,10 @@ public class Toucan extends Animal implements IFlyer, IHerbivore, ICarnivore {
                 2,
                 false,
                 true,
-                EFoodSource.omnivore,
-                EHabitat.rainForest,
-                new EMeat[]{ EMeat.insects },
-                new EPlants[]{ EPlants.fruit }
+                EFoodSource.OMNIVORE,
+                EHabitat.RAINFOREST,
+                new EMeat[]{ EMeat.INSECTS},
+                new EPlants[]{ EPlants.FRUIT}
         );
     }
 
@@ -38,7 +38,7 @@ public class Toucan extends Animal implements IFlyer, IHerbivore, ICarnivore {
             eatPlants();
             return;
         }
-        System.out.printf("The %s is gonna eat insects today.%n", this.name);
+        System.out.printf("The %s is gonna eat INSECTS today.%n", this.name);
         eatMeat();
     }
 

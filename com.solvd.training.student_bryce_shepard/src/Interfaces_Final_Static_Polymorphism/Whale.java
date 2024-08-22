@@ -9,7 +9,7 @@ public abstract class Whale extends Animal implements ISwimmer {
                 false,
                 false,
                 fs,
-                EHabitat.ocean,
+                EHabitat.OCEAN,
                 meats,
                 plants
         );

@@ -2,27 +2,17 @@ package Interfaces_Final_Static_Polymorphism;
 
 public class Interfaces_Final_Static_Polymorphism {
     public static void main(String[] args){
-        int count = 0;
         Animal[] animals = new Animal[10];
-        animals[count] = new Bear();
-        count++;
-        animals[count] = new PolarBear();
-        count++;
-        animals[count] = new Cougar();
-        count++;
-        animals[count] = new Buffalo();
-        count++;
-        animals[count] = new Camel();
-        count++;
-        animals[count] = new Zebra();
-        count++;
-        animals[count] = new Orca();
-        count++;
-        animals[count] = new BlueWhale();
-        count++;
-        animals[count] = new Walrus();
-        count++;
-        animals[count] = new Toucan();
+        animals[0] = new Bear();
+        animals[1] = new PolarBear();
+        animals[2] = new Cougar();
+        animals[3] = new Buffalo();
+        animals[4] = new Camel();
+        animals[5] = new Zebra();
+        animals[6] = new Orca();
+        animals[7] = new BlueWhale();
+        animals[8] = new Walrus();
+        animals[9] = new Toucan();
 
         for (Animal animal : animals) {
             System.out.println(animal);

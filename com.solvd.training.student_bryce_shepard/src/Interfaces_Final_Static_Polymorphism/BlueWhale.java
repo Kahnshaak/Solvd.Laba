@@ -4,9 +4,9 @@ final public class BlueWhale extends Whale implements ICarnivore, IHerbivore{
     public BlueWhale(){
         super(
                 "Blue Whale",
-            EFoodSource.omnivore,
-            new EMeat[] { EMeat.zooplankton },
-            new EPlants[] { EPlants.phytoplankton }
+            EFoodSource.OMNIVORE,
+            new EMeat[] { EMeat.ZOOPLANKTON},
+            new EPlants[] { EPlants.PHYTOPLANKTON}
         );
     }
 

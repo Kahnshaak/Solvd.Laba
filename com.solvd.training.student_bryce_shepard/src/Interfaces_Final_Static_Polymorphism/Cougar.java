@@ -9,9 +9,9 @@ public class Cougar extends Animal implements ICarnivore, ILand{
                 4,
                 true,
                 true,
-                EFoodSource.carnivore,
-                EHabitat.mountain,
-                new EMeat[]{ EMeat.carrion, EMeat.deer },
+                EFoodSource.CARNIVORE,
+                EHabitat.MOUNTAIN,
+                new EMeat[]{ EMeat.CARRION, EMeat.DEER},
                 new EPlants[]{}
         );
     }

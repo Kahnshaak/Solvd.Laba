@@ -7,8 +7,8 @@ final public class Orca extends Whale implements ICarnivore{
     public Orca(){
         super(
                 "Orca Whale",
-                EFoodSource.carnivore,
-                new EMeat[]{ EMeat.seal, EMeat.fish, EMeat.squid},
+                EFoodSource.CARNIVORE,
+                new EMeat[]{ EMeat.SEAL, EMeat.FISH, EMeat.SQUID},
                 new EPlants[]{}
         );
     }

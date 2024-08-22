@@ -7,10 +7,10 @@ public class Zebra extends Animal implements ILand, IHerbivore{
                 4,
                 false,
                 false,
-                EFoodSource.herbivore,
-                EHabitat.savannah,
+                EFoodSource.HERBIVORE,
+                EHabitat.SAVANNAH,
                 new EMeat[]{},
-                new EPlants[]{ EPlants.grass }
+                new EPlants[]{ EPlants.GRASS}
         );
     }
 

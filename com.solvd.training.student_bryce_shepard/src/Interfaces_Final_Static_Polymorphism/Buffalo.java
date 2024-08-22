@@ -7,10 +7,10 @@ public class Buffalo extends Animal implements IHerbivore, ILand {
                 4,
                 true,
                 false,
-                EFoodSource.herbivore,
-                EHabitat.plains,
+                EFoodSource.HERBIVORE,
+                EHabitat.PLAINS,
                 new EMeat[]{},
-                new EPlants[]{ EPlants.grass }
+                new EPlants[]{ EPlants.GRASS}
         );
     }
 

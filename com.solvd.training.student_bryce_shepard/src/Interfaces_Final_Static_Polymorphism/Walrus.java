@@ -9,9 +9,9 @@ public class Walrus extends Animal implements ISwimmer, ICarnivore{
                 0,
                 false,
                 false,
-                EFoodSource.carnivore,
-                EHabitat.ocean,
-                new EMeat[]{ EMeat.fish, EMeat.squid, EMeat.shrimp, EMeat.crab },
+                EFoodSource.CARNIVORE,
+                EHabitat.OCEAN,
+                new EMeat[]{ EMeat.FISH, EMeat.SQUID, EMeat.SHRIMP, EMeat.CRAB},
                 new EPlants[]{}
         );
     }
@@ -36,7 +36,7 @@ public class Walrus extends Animal implements ISwimmer, ICarnivore{
 
     @Override
     public void swim() {
-        System.out.printf("The %s lazily swims down to the ocean floor.%n", this.name);
+        System.out.printf("The %s lazily swims down to the OCEAN floor.%n", this.name);
     }
 
     @Override

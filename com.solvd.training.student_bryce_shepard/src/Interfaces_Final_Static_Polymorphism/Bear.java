@@ -9,10 +9,10 @@ public class Bear extends Animal implements IHibernator, ICarnivore, IHerbivore,
                 4,
                 true,
                 true,
-                EFoodSource.omnivore,
-                EHabitat.forest,
-                new EMeat[]{EMeat.fish, EMeat.deer, EMeat.carrion, EMeat.insects},
-                new EPlants[]{EPlants.berries, EPlants.leaves}
+                EFoodSource.OMNIVORE,
+                EHabitat.FOREST,
+                new EMeat[]{EMeat.FISH, EMeat.DEER, EMeat.CARRION, EMeat.INSECTS},
+                new EPlants[]{EPlants.BERRIES, EPlants.LEAVES}
         );
         this.hibernating = false;
     }

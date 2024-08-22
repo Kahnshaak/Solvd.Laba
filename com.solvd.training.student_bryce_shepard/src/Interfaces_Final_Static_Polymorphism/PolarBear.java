@@ -5,9 +5,9 @@ final public class PolarBear extends Bear implements ICarnivore, ISwimmer, ILand
     public PolarBear() {
         super(
                 "Polar Bear",
-                EFoodSource.carnivore,
-                EHabitat.tundra,
-                new EMeat[] {EMeat.seal, EMeat.fish },
+                EFoodSource.CARNIVORE,
+                EHabitat.TUNDRA,
+                new EMeat[] {EMeat.SEAL, EMeat.FISH},
                 new EPlants[] {}
         );
     }
