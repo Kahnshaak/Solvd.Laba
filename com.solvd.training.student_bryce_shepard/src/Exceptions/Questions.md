@@ -18,10 +18,17 @@ static public void main(String args[]) throws Exception {}
 with a try/catch. The catch can do multiple exceptions, it can also do file logging 
 
 # 6. When we can use try-catch with resources? What is the requirement?
+You have to be using a closable object like a file writer
 
 # 7. When finally block will be executed?
+After the try/catch resolves
 
 # 8. Will you handle RuntimeExceptions in try-catch block?
+No
 
 # 9. How to create a custom exception?
+Create a class that inherits Exception
+
 # 10. What is a logger? Logger levels? What log aggregators do you know?
+Log4j
+It allows you to track exceptions that are thrown, and any info that you pass on to it
